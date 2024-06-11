@@ -107,7 +107,7 @@ Check out the other examples [here](examples).
 
 ### `actionParams`
 
-Object of keys that same name with items to match parameters to onPress actions. If you want to pass different parameters for HoldItem to menu item `onPress` handlers ([check WhatsApp example](https://github.com/enesozturk/react-native-hold-menu/blob/main/example/src/screens/Whatsapp/MessageItem.tsx)), you need to use this prop to set params per HoldItem.
+Object of keys that same name with items to match parameters to onPress actions. If you want to pass different parameters for HoldItem to menu item `onPress` handlers ([check example](https://github.com/Commencement-Technology/react-native-cli-hold-menu/blob/main/example/src/screens/HomeScreen.tsx)), you need to use this prop to set params per HoldItem.
 
 > The reason provide action params with another prop is make it able to pass with shared value without performance issues.
 

@@ -12,12 +12,12 @@ hide_title: true
 
 Before using Hold Menu in your application, you need to wrap your app with `HoldMenuProvider` first.
 
-See all the [HoldMenuProvider props](/react-native-hold-menu/docs/props#holdmenuprovider).
+See all the [HoldMenuProvider props](/react-native-cli-hold-menu/docs/props#holdmenuprovider).
 
 ```tsx
 import React from 'react';
 
-import { HoldMenuProvider } from 'react-native-hold-menu';
+import { HoldMenuProvider } from 'react-native-cli-hold-menu';
 
 const App = () => {
   return (
@@ -32,15 +32,15 @@ export default App;
 
 ### HoldItem
 
-Now you can wrap your components with `HoldItem`. You need to set [items](/react-native-hold-menu/docs/props#items) prop and also see other optional props for your menu.
+Now you can wrap your components with `HoldItem`. You need to set [items](/react-native-cli-hold-menu/docs/props#items) prop and also see other optional props for your menu.
 
-See all the [HoldItem props](/react-native-hold-menu/docs/props#holditem).
+See all the [HoldItem props](/react-native-cli-hold-menu/docs/props#holditem).
 
 ```tsx
 import React from 'react';
 import { View } from 'react-native';
 
-import { HoldItem } from 'react-native-hold-menu';
+import { HoldItem } from 'react-native-cli-hold-menu';
 
 import styles from './styles';
 

@@ -5,7 +5,7 @@ slug: /examples
 ---
 
 :::info
-If you want to see full examples in your phone or simulator, you can clone [this showcase project](https://github.com/enesozturk/react-native-hold-menu-expo-example) and run in seconds with Expo 🔥
+If you want to see full examples in your phone or simulator, you can clone [this showcase project](https://github.com/Commencement-Technology/react-native-cli-hold-menu) and run 🔥
 :::
 
 ## Configuring List
