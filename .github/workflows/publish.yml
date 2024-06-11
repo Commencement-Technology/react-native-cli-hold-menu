@@ -27,31 +27,31 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20.x'
-          registry-url: 'https://registry.npmjs.org'
-          # registry-url: 'https://npm.pkg.github.com'
-          # scope: '@commencementtechnology'
+          # registry-url: 'https://registry.npmjs.org'
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@commencementtechnology'
       - run: npm install
         env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN_NEW }}
       - run: npm run build
       - run: npm run copy-dts
       - run: npm run release
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN_NEW }}
       # Additional files to be published along with npm packages
       - name: Publish LICENSE, README.md, package.json
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN_NEW }}
         run: npm publish
       
       - name: Publish src directory
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN_NEW }}
         run: npm publish
         working-directory: ./src
         
       - name: Publish lib directory
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN_NEW }}
         run: npm publish
         working-directory: ./lib
