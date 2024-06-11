@@ -27,8 +27,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20.x'
-          # registry-url: 'https://registry.npmjs.org'
-          registry-url: 'https://npm.pkg.github.com'
+          registry-url: 'https://registry.npmjs.org'
+          # registry-url: 'https://npm.pkg.github.com'
           # scope: '@commencementtechnology'
       - run: npm install
         env:
