@@ -18,7 +18,7 @@ A performant, easy to use hold to open context menu for React Native Cli 🔥
 
 ## Getting Started
 
-Check out [the documentation website](https://enesozturk.github.io/react-native-hold-menu).
+Check out [the documentation website](https://commencement-technology.github.io/react-native-cli-hold-menu).
 
 ---
 
