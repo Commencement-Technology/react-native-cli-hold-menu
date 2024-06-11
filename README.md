@@ -33,3 +33,4 @@ Check out [the documentation website](https://commencement-technology.github.io/
 #### Show Your Support
 
 Please give a star if you like this project! 🤩
+Thanks
