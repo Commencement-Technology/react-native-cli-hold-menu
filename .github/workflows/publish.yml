@@ -11,6 +11,10 @@ jobs:
       contents: read
       packages: write
     steps:
+      - name: Set up Git
+        run: |
+          git config --global user.email "commencement.technology@gmail.com"
+          git config --global user.name "Commencement Technology"
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
