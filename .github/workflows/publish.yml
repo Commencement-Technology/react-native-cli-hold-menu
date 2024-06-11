@@ -45,7 +45,8 @@ jobs:
       - name: Publish npm
         env:
           NODE_AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
-      #   run: npm publish --provenance --access public
+        run: npm publish --access public
+        # run: npm publish --provenance --access public
       
       # - name: Publish src directory
       #   env:
