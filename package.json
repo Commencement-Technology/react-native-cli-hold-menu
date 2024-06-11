@@ -1,5 +1,5 @@
 {
-  "name": "@commencementtechnology/react-native-cli-hold-menu",
+  "name": "react-native-cli-hold-menu",
   "version": "0.0.12",
   "description": "A performant, easy to use hold to open context menu for React Native Cli.",
   "main": "lib/commonjs/index.js",
