@@ -33,27 +33,27 @@ jobs:
           # scope: '@commencementtechnology'
       - run: npm install
         env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN_NEW }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: npm run build
       - run: npm run copy-dts
       # - run: npm run release
       #   env:
-      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN_NEW }}
+      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       # Additional files to be published along with npm packages
       
       - name: Publish LICENSE, README.md, package.json
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN_NEW }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npm publish --registry=https://npm.pkg.github.com/
       
       - name: Publish src directory
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN_NEW }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npm publish --registry=https://npm.pkg.github.com/
         working-directory: ./src
         
       - name: Publish lib directory
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN_NEW }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npm publish --registry=https://npm.pkg.github.com/
         working-directory: ./lib
