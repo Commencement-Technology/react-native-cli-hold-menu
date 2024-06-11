@@ -1,6 +1,6 @@
 {
   "name": "react-native-cli-hold-menu",
-  "version": "0.0.12",
+  "version": "1.0.0",
   "description": "A performant, easy to use hold to open context menu for React Native Cli.",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
@@ -31,10 +31,12 @@
   "author": "Commencement Technology (https://commencement.technology)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Commencement-Technology/react-native-cli-hold-menu/issues"
+    "url": "https://github.com/Commencement-Technology/react-native-cli-hold-menu/issues",
+    "email": "commencement.technology@gmail.com"
   },
   "publishConfig": {
-    "commencementtech:registry": "https://npm.pkg.github.com"
+    "@commencementtechnology:registry": "https://npm.pkg.github.com",
+    "provenance": true
   },
   "homepage": "https://commencement-technology.github.io/react-native-cli-hold-menu",
   "scripts": {
