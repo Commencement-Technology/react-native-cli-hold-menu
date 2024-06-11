@@ -30,6 +30,9 @@
   "bugs": {
     "url": "https://github.com/Commencement-Technology/react-native-cli-hold-menu/issues"
   },
+  "publishConfig": {
+  "registry": "https://npm.pkg.github.com"
+  },
   "homepage": "https://commencement-technology.github.io/react-native-cli-hold-menu",
   "scripts": {
     "typescript": "tsc --noEmit",
