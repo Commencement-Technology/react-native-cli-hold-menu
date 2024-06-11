@@ -6,6 +6,16 @@
   "module": "lib/module/index.js",
   "types": "lib/typescript/index.d.ts",
   "react-native": "src/index.ts",
+  "scripts": {
+    "typescript": "tsc --noEmit",
+    "lint": "eslint \"**/*.{js,ts,tsx}\"",
+    "build": "bob build && yarn copy-dts",
+    "copy-dts": "copyfiles -u 1 \"src/**/*.d.ts\" lib/typescript",
+    "release": "release-it",
+    "example": "yarn --cwd example",
+    "bootstrap": "yarn install && yarn example",
+    "version": "auto-changelog -p && git add ."
+  },
   "files": [
     "src",
     "lib",
@@ -39,16 +49,6 @@
     "provenance": true
   },
   "homepage": "https://commencement-technology.github.io/react-native-cli-hold-menu",
-  "scripts": {
-    "typescript": "tsc --noEmit",
-    "lint": "eslint \"**/*.{js,ts,tsx}\"",
-    "build": "bob build && yarn copy-dts",
-    "copy-dts": "copyfiles -u 1 \"src/**/*.d.ts\" lib/typescript",
-    "release": "release-it",
-    "example": "yarn --cwd example",
-    "bootstrap": "yarn install && yarn example",
-    "version": "auto-changelog -p && git add ."
-  },
   "dependencies": {
     "@gorhom/portal": "^1.0.3",
     "@react-native-community/blur": "^4.4.0",
