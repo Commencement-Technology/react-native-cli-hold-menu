@@ -26,7 +26,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Commencement-Technology/react-native-cli-hold-menu"
+    "url": "git+https://github.com/Commencement-Technology/react-native-cli-hold-menu.git"
   },
   "author": "Commencement Technology (https://commencement.technology)",
   "license": "MIT",
