@@ -24,7 +24,10 @@
     "reanimated",
     "menu"
   ],
-  "repository": "https://github.com/Commencement-Technology/react-native-cli-hold-menu",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Commencement-Technology/react-native-cli-hold-menu"
+  },
   "author": "Commencement Technology (https://commencement.technology)",
   "license": "MIT",
   "bugs": {
