@@ -42,19 +42,19 @@ jobs:
       #     NODE_AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
       # Additional files to be published along with npm packages
       
-      - name: Publish LICENSE, README.md, package.json
+      - name: Publish npm
         env:
           NODE_AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
-        run: npm publish --provenance --access public
+      #   run: npm publish --provenance --access public
       
-      - name: Publish src directory
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
-        run: npm publish --provenance --access public
-        working-directory: ./src
+      # - name: Publish src directory
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
+      #   run: npm publish --provenance --access public
+      #   working-directory: ./src
         
-      - name: Publish lib directory
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
-        run: npm publish --provenance --access public
-        working-directory: ./lib
+      # - name: Publish lib directory
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
+      #   run: npm publish --provenance --access public
+      #   working-directory: ./lib
