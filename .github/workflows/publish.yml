@@ -18,6 +18,10 @@ jobs:
       - uses: actions/checkout@v4
       - name: Your GitHub Release Step
         uses: actions/create-release@v1
+        with:
+          tag_name: v0.0.3
+          draft: false
+          prerelease: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/setup-node@v3
