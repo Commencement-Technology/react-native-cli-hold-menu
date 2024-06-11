@@ -30,8 +30,8 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           scope: '@commencementtechnology'
       - run: npm install
-      - env:
-        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: npm run build
       - run: npm run copy-dts
       - run: npm run release
