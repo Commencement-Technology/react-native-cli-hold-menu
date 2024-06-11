@@ -1,5 +1,4 @@
-import React, { memo } from 'react';
-
+import React, { FunctionComponent, memo } from 'react';
 import Animated, { useAnimatedProps } from 'react-native-reanimated';
 import { useInternal } from '../../hooks';
 
@@ -9,17 +8,14 @@ type IconComponentProps = {
   animatedProps: Partial<{ color: string }>;
 };
 
-// Update iconComponent type, React.ComponentClass<IconComponentProps, any>
 type IconProps = {
-  iconComponent: any;
+  iconComponent: FunctionComponent<any>; // Simplified type
   name: string;
 };
 
 const Icon = ({ iconComponent, name }: IconProps) => {
   const { theme } = useInternal();
-  let AnimatedIcon = Animated.createAnimatedComponent<IconComponentProps>(
-    iconComponent
-  );
+  const AnimatedIcon = Animated.createAnimatedComponent(iconComponent);
 
   const iconProps = useAnimatedProps(() => {
     return {
