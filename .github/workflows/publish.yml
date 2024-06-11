@@ -23,7 +23,23 @@ jobs:
       - run: |
           # echo @lexacode:https://npm.pkg.github.com/ > build/.npmrc
           # echo '//npm.pkg.github.com/:_authToken=${NPM_TOKEN}' >> build/.npmrc
-      - run: npm publish
-        working-directory: ./build
+      - name: Publish lib directory
+        run: npm publish
+        working-directory: ./lib
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPMPUB_TOKEN }}
+
+      - name: Publish src directory
+        run: npm publish
+        working-directory: ./src
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPMPUB_TOKEN }}
+
+      # Additional files to be published along with npm packages
+      - name: Publish LICENSE, README.md, package.json
+        run: npm publish . --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPMPUB_TOKEN }}
+
+
+
