@@ -8,7 +8,7 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       packages: write
     steps:
       - name: Set up Git
@@ -27,8 +27,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20.x'
-          registry-url: 'https://npm.pkg.github.com'
-          scope: '@commencementtechnology'
+          registry-url: 'https://registry.npmjs.org'
+          # registry-url: 'https://npm.pkg.github.com'
+          # scope: '@commencementtechnology'
       - run: npm install
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
