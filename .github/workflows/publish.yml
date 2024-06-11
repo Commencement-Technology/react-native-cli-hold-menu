@@ -31,7 +31,7 @@ jobs:
           # registry-url: 'https://registry.npmjs.org'
           # registry-url: 'https://npm.pkg.github.com'
           # scope: '@commencementtechnology'
-      - run: npm ci
+      - run: npm install
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN_NEW }}
       - run: npm run build
