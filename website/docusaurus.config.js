@@ -1,19 +1,19 @@
 module.exports = {
-  title: 'React Native Hold Menu',
+  title: 'React Native Cli Hold Menu',
   tagline:
-    'A performant, easy to use hold to open context menu for React Native powered by Reanimated.',
-  url: 'https://enesozturk.github.io',
-  baseUrl: '/react-native-hold-menu/',
+    'A performant, easy to use hold to open context menu for React Native Cli',
+  url: 'https://commencement-technology.github.io',
+  baseUrl: '/react-native-cli-hold-menu/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'enesozturk',
-  projectName: 'react-native-hold-menu',
+  organizationName: 'Commencement Technology',
+  projectName: 'react-native-cli-hold-menu',
   themeConfig: {
     twitterImage: 'img/og.png',
     image: 'img/og.png',
     navbar: {
-      title: 'React Native Hold Menu',
+      title: 'React Native Cli Hold Menu',
       items: [
         {
           to: 'docs/',
@@ -22,7 +22,7 @@ module.exports = {
           position: 'left',
         },
         {
-          href: 'https://github.com/enesozturk/react-native-hold-menu',
+          href: 'https://github.com/Commencement-Technology/react-native-cli-hold-menu',
           label: 'GitHub',
           position: 'right',
         },
