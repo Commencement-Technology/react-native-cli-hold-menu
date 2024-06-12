@@ -1,6 +1,6 @@
 # React Native Cli Hold Menu
 
- [![npm](https://img.shields.io/badge/types-included-blue?style=flat-square)](https://www.npmjs.com/package/react-native-cli-hold-menu)
+[![npm](https://img.shields.io/npm/l/react-native-cli-hold-menu?style=flat-square)](https://www.npmjs.com/package/react-native-cli-hold-menu) [![npm](https://img.shields.io/badge/types-included-blue?style=flat-square)](https://www.npmjs.com/package/react-native-cli-hold-menu)
 
 A performant, easy-to-use hold to open a context menu for React Native Cli 🔥
 
