@@ -417,7 +417,7 @@ If you want to see full examples in your phone or simulator, you can clone [this
 
 **Result**
 
-![list-with-title](/img/examples/list-with-title.png)
+![list-with-title](/website/static/img/examples/list-with-title.png)
 
 ### List with separator
 
@@ -437,7 +437,7 @@ If you want to see full examples in your phone or simulator, you can clone [this
 
 **Result**
 
-![list-with-separator](/img/examples/list-with-separator.png)
+![list-with-separator](/website/static/img/examples/list-with-separator.png)
 
 ### List with destructive button
 
@@ -462,7 +462,7 @@ If you want to see full examples in your phone or simulator, you can clone [this
 
 **Result**
 
-![list-with-destructive](/img/examples/list-with-destructive.png)
+![list-with-destructive](/website/static/img/examples/list-with-destructive.png)
 
 ### List with icons
 
@@ -505,7 +505,7 @@ If you want to see full examples in your phone or simulator, you can clone [this
 
 **Result**
 
-![list-with-destructive](/img/examples/list-with-icons.png)
+![list-with-destructive](/website/static/img/examples/list-with-icons.png)
 
 <!-- ## Configuring Hold Item -->
 
