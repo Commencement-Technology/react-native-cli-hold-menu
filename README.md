@@ -15,18 +15,17 @@ A performant, easy-to-use hold to open a context menu for React Native Cli 🔥
 - Supports device orientation change.
 - Compatible with Cli.
 - Written in `TypeScript`.
----
----
 
+---
 ## Getting Started
-
 ---
-> id: getting-started
-> title: Getting Started
-> description: A performant, easy-to-use hold to open the context menu for React Native Cli 🔥
-> hide_title: true
-> slug: /
-> hide_table_of_contents: true
+---
+- id: getting-started
+- title: Getting Started
+- Description: A performant, easy-to-use hold to open the context menu for React Native Cli 🔥
+- hide_title: true
+- slug: /
+- hide_table_of_contents: true
 ---
 
 ## Installation
