@@ -10,7 +10,7 @@
     "releaseNotes": "auto-changelog --stdout --unreleased --template ./templates/release-template.hbs"
   },
   "npm": {
-    "publish": false
+    "publish": true
   },
   "plugins": {
     "@release-it/conventional-changelog": {
