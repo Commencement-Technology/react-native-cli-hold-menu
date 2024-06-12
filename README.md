@@ -39,11 +39,9 @@ This library needs these dependencies to be installed in your project before you
 yarn add react-native-reanimated react-native-gesture-handler react-native-unimodules @react-native-community/blur react-native-haptic-feedback
 ```
 
-:::info
 **React Native Gesture Handler** needs extra steps to finalize its installation, please follow their [installation instructions](https://github.com/software-mansion/react-native-gesture-handler).
 
 **React Native Reanimated** needs extra steps to finalize its installation, please follow their [installation instructions](https://docs.swmansion.com/react-native-reanimated/docs).
-:::
 
 ---
 
