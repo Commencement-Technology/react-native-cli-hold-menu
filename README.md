@@ -24,7 +24,6 @@ A performant, easy-to-use hold to open a context menu for React Native Cli 🔥
 - hide_title: true
 - slug: /
 - hide_table_of_contents: true
-##
 
 ## Installation
 
