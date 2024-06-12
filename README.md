@@ -21,7 +21,7 @@ A performant, easy-to-use hold to open a context menu for React Native Cli 🔥
 ## Getting Started
 
 ---
-id: getting-started
+> id: getting-started
 title: Getting Started
 description: A performant, easy-to-use hold to open the context menu for React Native Cli 🔥
 hide_title: true
