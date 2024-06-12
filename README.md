@@ -2,7 +2,7 @@
 
  [![npm](https://img.shields.io/npm/l/react-native-cli-hold-menu?style=flat-square)](https://www.npmjs.com/package/react-native-cli-hold-menu) [![npm](https://img.shields.io/badge/types-included-blue?style=flat-square)](https://www.npmjs.com/package/react-native-cli-hold-menu)
 
-A performant, easy to use hold to open context menu for React Native Cli 🔥
+A performant, easy-to-use hold to open a context menu for React Native Cli 🔥
 
 ---
 
@@ -26,20 +26,6 @@ hide_title: true
 slug: /
 hide_table_of_contents: true
 ---
-
-# React Native Cli Hold Menu
-
-A performant, easy to use hold to open context menu for React Native powered by Reanimated.
-
-[![npm](https://img.shields.io/npm/l/react-native-cli-hold-menu?style=flat-square)](https://www.npmjs.com/package/react-native-cli-hold-menu) [![npm](https://img.shields.io/badge/types-included-blue?style=flat-square)](https://www.npmjs.com/package/react-native-hold-menu)
-
-## Features
-
-- Smooth interactions & animations.
-- Supports dark/light Mode. 🌚 🌝
-- Supports device orientation change.
-- Compatible with Cli.
-- Written in `TypeScript`.
 
 ## Installation
 
