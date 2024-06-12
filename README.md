@@ -398,7 +398,7 @@ If you want to see full examples in your phone or simulator, you can clone [this
 
 **Result**
 
-![list-simple](/blob/doc/website/static/img/examples/list-simple.png)
+![list-simple](/website/static/img/examples/list-simple.png)
 
 ### List with title
 
