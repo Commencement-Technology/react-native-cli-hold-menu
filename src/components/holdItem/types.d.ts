@@ -1,6 +1,7 @@
 import { ViewStyle } from 'react-native';
 import { MenuItemProps } from '../menu/types';
 import { TransformOriginAnchorPosition } from '../../utils/calculations';
+import React from 'react';
 
 export type HoldItemProps = {
   /**
@@ -124,6 +125,8 @@ export type HoldItemProps = {
    * longPressMinDurationMs={250}
    */
   longPressMinDurationMs?: number;
+
+  activeContainerStyles?: ViewStyle | ViewStyle[];
 };
 
 export type GestureHandlerProps = {

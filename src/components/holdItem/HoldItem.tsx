@@ -67,10 +67,12 @@ const HoldItemComponent = ({
   closeOnTap,
   longPressMinDurationMs = 150,
   children,
+  activeContainerStyles,
 }: HoldItemProps) => {
   //#region hooks
   const { state, menuProps, safeAreaInsets } = useInternal();
   const deviceOrientation = useDeviceOrientation();
+  const [menuActive, setMenuActive] = React.useState(false);
   //#endregion
 
   //#region variables
@@ -208,6 +210,7 @@ const HoldItemComponent = ({
     if (isFinised && isListValid) {
       state.value = CONTEXT_MENU_STATE.ACTIVE;
       isActive.value = true;
+      runOnJS(setMenuActive)(true);
       scaleBack();
       if (hapticFeedback !== 'None') {
         runOnJS(hapticResponse)();
@@ -299,6 +302,7 @@ const HoldItemComponent = ({
   >({
     onActive: _ => {
       if (closeOnTap) state.value = CONTEXT_MENU_STATE.END;
+      runOnJS(setMenuActive)(false);
     },
   });
   //#endregion
@@ -320,8 +324,8 @@ const HoldItemComponent = ({
     };
   });
   const containerStyle = React.useMemo(
-    () => [containerStyles, animatedContainerStyle],
-    [containerStyles, animatedContainerStyle]
+    () => [containerStyles, animatedContainerStyle, isActive.value ? activeContainerStyles : {}],
+    [containerStyles, animatedContainerStyle, menuActive]
   );
 
   const animatedPortalStyle = useAnimatedStyle(() => {
@@ -372,6 +376,7 @@ const HoldItemComponent = ({
     _state => {
       if (_state === CONTEXT_MENU_STATE.END) {
         isActive.value = false;
+        runOnJS(setMenuActive)(false);
       }
     }
   );
@@ -435,7 +440,7 @@ const HoldItemComponent = ({
       <Portal key={key} name={key}>
         <Animated.View
           key={key}
-          style={portalContainerStyle}
+          style={[portalContainerStyle, isActive.value ? activeContainerStyles : {}]}
           animatedProps={animatedPortalProps}
         >
           <PortalOverlay />
